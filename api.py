@@ -4,6 +4,7 @@ print("User Name: ")
 userName = input()
 
 url = "https://codeforces.com/api/user.info?handles="
+
 url += userName
 
 result = requests.get(url)
