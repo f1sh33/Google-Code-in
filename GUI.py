@@ -38,14 +38,17 @@ class Application(tk.Frame):
             mRank = result["result"][0]["maxRank"]
             cRating = result["result"][0]["rating"]
             mRating = result["result"][0]["maxRating"]
+            name = "Handle: " + userName
             cRank = "Current Rank: " + cRank
             mRank = "Max Rank: " + mRank
             cRating = "Current Rating: " + str(cRating)
             mRating = "Max rating: " + str(mRating)
+        label5 =  tk.Label(self, text = name)
         label1 =  tk.Label(self, text = cRank)
         label2 =  tk.Label(self, text = mRank)
         label3 =  tk.Label(self, text = cRating)
         label4 =  tk.Label(self, text = mRating)
+        label5.pack()
         label1.pack()
         label2.pack()
         label3.pack()
